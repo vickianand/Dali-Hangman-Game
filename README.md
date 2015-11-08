@@ -14,7 +14,7 @@ Salvador Dali will show you one of his paintings or a photograph and you need to
 The Pablo Picasso Hangman Game
 -----------------------------------
 Pablo Picasso will show you one of his paintings or a photograph and you need to guess the word that best describes it (in some cases it may be two words). The answers may include a part of the painting's title, or simply a descriptive word of what you see in the art. But as Pablo Picasso sits there next to his painting, if you choose a wrong letter, you'll see Picasso express his displeasure with your mistakes ... if you make six wrong choices, Picasso will let you know that the game is over.
-![alt text](https://github.com/vickianand/Dali-Picasso-Hangman-Game/blob/master/img/artists/picasso/have_fun.gif "Pablo Picasso lived from 1881-1973, and was a Spanish-born painter, sculptor, graphic artist, and ceramist, who worked in France. He is generally considered to have been the most important artist of the 20th-century.")
+![alt text](https://github.com/vickianand/Dali-Picasso-Hangman-Game/blob/master/img/artists/picasso/have_fun.jpg "Pablo Picasso lived from 1881-1973, and was a Spanish-born painter, sculptor, graphic artist, and ceramist, who worked in France. He is generally considered to have been the most important artist of the 20th-century.")
 
 
 License

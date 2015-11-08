@@ -9,8 +9,9 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400">
-  <link rel="stylesheet" href="css/style.min.css">
+<!--   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400">
+ -->  
+ <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -50,11 +51,11 @@
   </form>
 
   <footer>
-    <div>Created 2015 <a target="_blank" href="https://twitter.com/_le717">Caleb Ely</a> <span class="breaker"></span> CIST&nbsp;2351&nbsp;-&nbsp;PHP Programming I
-    <span class="breaker"></span> <a target="_blank" href="http://www.southeasterntech.edu">Southeastern&nbsp;Technical&nbsp;College</a></div>
+    <div>Modified 2015 <a target="_blank" href="https://twitter.com/vicki_anand">Vicki Anand</a> <span class="breaker"></span> ART&nbsp;406A&nbsp;-&nbsp;Art Criticism Theory and Practice
+    <span class="breaker"></span> <a target="_blank" href="http://www.iitk.ac.in">IIT&nbsp;Kanpur</a> <span class="breaker"></span> Adapted from <a target="_blank" href="https://github.com/vickianand/PHP-Hangman/">PHP-Hangman</a> </div>
   </footer>
 
-  <script async src="js/microajax.min.js"></script>
-  <script async src="js/hangman.min.js"></script>
+  <script async src="js/microajax.js"></script>
+  <script async src="js/hangman.js"></script>
 </body>
 </html>

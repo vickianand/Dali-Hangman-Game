@@ -24,7 +24,7 @@ The word to guess is represented by a row of dashes, representing each letter of
 *	The other player completes the diagram.
 
 An example game in progress is shown below (the answer is Wikipedia) :
-![](https://github.com/vickianand/Dali-Picasso-Hangman-Game/blob/master/img/taditional_game.png "An example game in progress; the answer is Wikipedia.")
+![](https://github.com/vickianand/Dali-Picasso-Hangman-Game/blob/master/Dali-Game/img/taditional_game.png "An example game in progress; the answer is Wikipedia.")
 
 [Wikipedia page](https://en.wikipedia.org/wiki/Hangman_(game))
 

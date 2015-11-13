@@ -38,6 +38,10 @@
       QMessageArea.classList.add("visible");
     },
 
+    displayFact: function(msg, fact) {
+      document.querySelector("#area-message p").innerHTML = msg+" <br> "+fact;
+    },
+
     displayWord: function(response) {
       // Display the updated word, clear the input box
       document.querySelector("#area-word p").innerHTML = response;
@@ -45,11 +49,16 @@
       QLetterInput.focus();
     },
 
+    displayArt: function(artNum) {
+        var QImg = document.querySelector(".artwork img[data-img-id='" + artNum + "']");
+        QImg.style.display = "block";
+    },
+
     displayGallows: function(val, pageLoad) {
       /**
        * Display the next image of the gallows.
        * @param {String} val Integer value as a string for the `data-img-id` attribute.
-       */
+       */ 
       function _displayImage(val) {
         var QImg = document.querySelector(".hangman img[data-img-id='" + val + "']");
         QImg.style.display = "block";
@@ -101,9 +110,10 @@
       success: function(response) {
 
         // Display the content
-        response = JSON.parse(response);
-        view.displayHeader(response.header);
-        view.displayWord(response.word);
+        response = JSON.parse(response);              //alert("hello : "+JSON.stringify(response));
+        view.displayHeader(response.header); 
+        view.displayArt(response.artNum);
+        view.displayWord(response.word);            
         view.displayHint(response.hint);
         view.displayGallows(response.gallows, true);
       }
@@ -140,6 +150,7 @@
 
         // Game over
         if (/win|over/i.test(response.msg)) {
+          view.displayFact(response.msg, response.fact);
           view.endGame();
         }
         return true;

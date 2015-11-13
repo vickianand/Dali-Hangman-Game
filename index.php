@@ -16,9 +16,9 @@
 
 <body>
   <header>
-    <img alt="Hangman logo" width="110" height="110" src="img/header.png">
-    <h1>Hangman</h1>
-    <p>How about a friendly game of Hangman? :)</p>
+    <img alt="Hangman logo" width="110" height="110" src="img/artists/dali/have_fun.jpg">
+    <h1>Dali-Hangman</h1>
+    <p>Have fun trying to figure out words describing my art!! :)</p>
   </header>
 
   <section class="hangman">
@@ -31,8 +31,25 @@
     <img id="gallows" width="200" height="400" src="img/gallows.png">
   </section>
 
+  <section class="artwork">
+    <img id="dali-1" data-img-id="1" width="294" height="400" src="img/artists/dali/1-art-by-dali.jpg">
+    <img id="dali-2" data-img-id="2" width="294" height="400" src="img/artists/dali/2-dali-elephant.jpg">
+    <img id="dali-3" data-img-id="3" width="294" height="400" src="img/artists/dali/3-dali-face-of-war.jpg">
+    <img id="dali-4" data-img-id="4" width="294" height="400" src="img/artists/dali/4-dali-last-supper.jpg">
+    <img id="dali-5" data-img-id="5" width="294" height="400" src="img/artists/dali/5-dali-melting-clock.jpg">
+    <img id="dali-6" data-img-id="6" width="294" height="400" src="img/artists/dali/6-gala-dali.jpg">
+    <img id="dali-7" data-img-id="7" width="294" height="400" src="img/artists/dali/7-persistence-of-memory.jpg">
+    <!-- <img id="transp"                 width="294" height="400" src="img/img/artists/dali/transparent.jpg"> -->
+  </section>
+
   <section id="area-hint">
-    <h2>Hint</h2>
+    <!-- <h2>Image, Hint : </h2> -->
+    <p></p>
+  </section>
+
+
+  <section id="area-word">
+    <h2></h2>
     <p></p>
   </section>
 
@@ -40,15 +57,11 @@
     <p></p>
   </section>
 
-  <section id="area-word">
-    <h2></h2>
-    <p></p>
-  </section>
-
   <form>
     <label><input type="text" id="guess" name="guess" autocomplete="off" maxlength="1"></label>
     <label><input type="submit" id="submit" name="submit" value="Guess!"></label>
   </form>
+
 
   <footer>
     <div>Modified 2015 <a target="_blank" href="https://twitter.com/vicki_anand">Vicki Anand</a> <span class="breaker"></span> ART&nbsp;406A&nbsp;-&nbsp;Art Criticism Theory and Practice

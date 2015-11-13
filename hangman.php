@@ -13,7 +13,7 @@
 
 
   class Hangman {
-    private $word, $hint, $guess;
+    private $artnum, $word, $hint, $guess, $fact;
     private $correctLetters = array();
     private $incorrectLetters = array();
     private $whiteList = array('-', ' ');
@@ -25,13 +25,15 @@
     public function __construct() {
       // The word/hint is not yet generated
       if (isset($_SESSION['clearCache']) || !isset($_SESSION['gameWord'])) {
-        list($this->word, $this->hint) = $this->selectRandomWord();
+        list($this->artnum, $this->word, $this->hint, $this->fact) = $this->selectRandomWord();
         unset($_SESSION['clearCache']);
 
         // It was generated, restore it
       } else {
+        $this->artnum = $_SESSION['gameArtNum'];
         $this->word = $_SESSION['gameWord'];
         $this->hint = $_SESSION['gameHint'];
+        $this->fact = $_SESSION['gameFact'];
         $this->correctLetters   = $_SESSION['correctLetters'];
         $this->incorrectLetters = $_SESSION['incorrectLetters'];
       }
@@ -42,8 +44,10 @@
      * Preserve the game hint and word.
      */
     public function __destruct() {
+      $_SESSION['gameArtNum'] = $this->artnum;
       $_SESSION['gameWord'] = $this->word;
       $_SESSION['gameHint'] = $this->hint;
+      $_SESSION['gameFact'] = $this->fact;
       $_SESSION['correctLetters']   = $this->correctLetters;
       $_SESSION['incorrectLetters'] = $this->incorrectLetters;
     }
@@ -54,7 +58,8 @@
      * @return array The word and its hint.
      */
     private function selectRandomWord() {
-      $wordList = file('words/words.are.wordy', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+      // $wordList = file('words/words.are.wordy', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+      $wordList = file('words/arts.hints', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
       $number = mt_rand(0, count($wordList) - 1);
       return explode("|", $wordList[$number]);
     }
@@ -84,6 +89,16 @@
     public function getHint() {
       return $this->hint;
     }
+
+    public function getFact() {
+      return $this->fact;
+    }
+
+
+    public function getArtNum() {
+      return $this->artnum;
+    }
+
 
     /**
      * @public
@@ -213,6 +228,7 @@
 
       // The number of incorrect guesses made (for displaying the gallows)
       $messages['gallows'] = $this->getGallows();
+      $messages['fact'] = $this->getFact();
 
       return $messages;
     }
@@ -226,6 +242,7 @@
     // Start a new game
     if (isset($_POST['pageLoad'])) {
       echo json_encode(array(
+        'artNum' => $hangMan->getArtNum(),
         'hint' => $hangMan->getHint(),
         'word' => $hangMan->displayWordStructure(),
         'header' => $hangMan->getHeader(),

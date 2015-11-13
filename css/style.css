@@ -37,7 +37,7 @@ header p {
 .hangman {
   position: relative;
   float: right;
-  top: -10.5em;
+  top: -5.5em;
   right: 23%;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -83,10 +83,27 @@ header p {
   left: 1.15em;
 }
 
-#area-hint, #area-message {
+.artwork {
+  position: relative;
+  float: left;
+  top: -5.5em;
+  left: 5%;
+}
+
+.artwork img {
+  position: absolute;
+  display: none;
+}
+
+.artwork #trans-p {
+  display: block;
+}
+
+#area-hint {
   width: 90%;
   position: relative;
   left: 5%;
+  top: 320px;
 }
 
 #area-word {
@@ -99,6 +116,7 @@ header p {
   display: inline;
   position: relative;
   left: 0.8%;
+  top: -.5em;
 }
 
 #area-word span {
@@ -117,7 +135,17 @@ header p {
 }
 
 #area-message {
-  max-width: 10em;
+  width: 90%;
+  position: relative;
+  left: -2%;
+  top: -40%;
+  text-align: center;
+  margin-left: 40%;
+}
+
+
+#area-message {
+  max-width: 20em;
   max-height: 0;
   border-radius: 0.375em;
   background-color: #8A2BE2;
@@ -128,12 +156,12 @@ header p {
 }
 
 #area-message.visible {
-  max-height: 5em;
+  max-height: 50em;
 }
 
 form {
   position: relative;
-  top: 3em;
+  /*top: 3em;*/
   text-align: center;
 }
 
@@ -226,3 +254,4 @@ footer a:hover {
     margin-top: 0.43em;
   }
 }
+

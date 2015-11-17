@@ -32,13 +32,13 @@
   </section>
 
   <section class="artwork">
-    <img id="dali-1" data-img-id="1" width="294" height="400" src="img/arts/1-art-by-dali.jpg">
-    <img id="dali-2" data-img-id="2" width="294" height="400" src="img/arts/2-dali-elephant.jpg">
-    <img id="dali-3" data-img-id="3" width="294" height="400" src="img/arts/3-dali-face-of-war.jpg">
-    <img id="dali-4" data-img-id="4" width="294" height="400" src="img/arts/4-dali-last-supper.jpg">
-    <img id="dali-5" data-img-id="5" width="294" height="400" src="img/arts/5-dali-melting-clock.jpg">
-    <img id="dali-6" data-img-id="6" width="294" height="400" src="img/arts/6-gala-dali.jpg">
-    <img id="dali-7" data-img-id="7" width="294" height="400" src="img/arts/7-persistence-of-memory.jpg">
+    <img id="dali-1" data-img-id="1" width="294" height="400" src="img/arts/1.jpg">
+    <img id="dali-2" data-img-id="2" width="294" height="400" src="img/arts/2.jpg">
+    <img id="dali-3" data-img-id="3" width="294" height="400" src="img/arts/3.jpg">
+    <img id="dali-4" data-img-id="4" width="294" height="400" src="img/arts/4.jpg">
+    <img id="dali-5" data-img-id="5" width="294" height="400" src="img/arts/5.jpg">
+    <img id="dali-6" data-img-id="6" width="294" height="400" src="img/arts/6.jpg">
+    <!-- <img id="dali-7" data-img-id="7" width="294" height="400" src="img/arts/7.jpg"> -->
     <!-- <img id="transp"                 width="294" height="400" src="img/img/arts/transparent.jpg"> -->
   </section>
 
